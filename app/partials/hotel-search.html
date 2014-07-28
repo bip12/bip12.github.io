@@ -1,0 +1,42 @@
+<form enctype="multipart/form-data" class="form-horizontal" name="hotelSearchForm" ng-submit="searchHotel(hotelResults)">
+	<fieldset>
+		<div class="control-group ">
+			<label for="package_name" class="control-label">Going to: {{singlepackage.package_name}}</label>
+			<div class="controls">
+				<label class="control-label">City:</label>
+				<input  class="form-control" type="text" ng-model="hotelCity">
+				<label >State:</label>
+				<input class="form-control" type="text" ng-model="hotelState">
+			</div>
+		</div>
+		<div class="controls ">
+			<label>Check in:</label>
+			<input  class="form-control"  type="text" ng-model="startDate" placeholder="mm/dd/yyyy">
+		</div>
+		<div class="control-group ">
+			<label for="end_date" class="control-label">Check out:</label>
+			<div class="controls">
+				<input id='datepick3' class="form-control" type="text" ng-model="endDate" placeholder="mm/dd/yyyy">
+			</div>
+		</div>
+		<br>
+		<div class="form-actions">
+			<a ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/searchResults"> <button class="btn btn-primary" ng-click="searchHotel(hotelResults)" ng-disabled="hotelSearchForm.$invalid">Search</button> </a>
+			<!--<a ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/{{hotelCity}}/{{hotelState}}/{{startDate}}/{{endDate}}/searchResults"><button class="btn btn-primary" >Search</button></a> -->
+		</div>	
+<br>
+<!--			$(document).ready(
+			  /* This is the function that will get executed after the DOM is fully loaded *
+			  function () {
+				$( "#datepicker1" ).datepicker({
+				  changeMonth: true,//this option for allowing user to select month
+				  changeYear: true //this option for allowing user to select from year range
+				});
+				$( "#datepicker2" ).datepicker({
+				  changeMonth: true,//this option for allowing user to select month
+				  changeYear: true //this option for allowing user to select from year range
+				});
+			  }
+			);-->
+	</fieldset>
+</form>

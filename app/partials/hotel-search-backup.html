@@ -1,0 +1,46 @@
+<ul>
+      <li ng-repeat="name in names">{{name}}</li>
+      
+    </ul>
+<form ng-submit="addName()">
+      <input type="text" ng-model="enteredName">
+      <input type="submit" value="add">
+    </form>
+	
+	<form enctype="multipart/form-data" class="form-horizontal" name="hotelSearchForm" ">
+	<fieldset>
+		<div class="control-group ">
+			<label for="package_name" class="control-label">Going to: {{singlepackage.package_name}}</label>
+			<div class="controls">
+				<label class="control-label">City:</label>
+				<input name="cityInput" class="form-control" type="text" ng-model="hotelCity">
+				<label >State:</label>
+				<input class="form-control" type="text" ng-model="hotelState">
+				<label for="start_date" class="control-label">Check in:</label>
+			<input type="text" ng-model="hotelStartDate" placeholder="mm/dd/yyyy">
+			<label for="start_date" class="control-label">Check in:</label>
+			<input type="text" ng-model="hotelEndDate" placeholder="mm/dd/yyyy">
+			</div>
+		</div>
+		<a ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/{{hotelCity}}/{{hotelState}}/{{startDate}}/{{endDate}}/searchResults"><button >Search</button></a>
+		<!--<button  ng-click="setSearch()" 	>Search</button>-->
+		
+			{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].hotelId}}
+		{{hotelCity}}
+	</fieldset>
+	</form>
+	<br>
+	<div>
+	<button  ng-click="bookSelectedHotel('bookResults')" 	>Book</button>
+	</div>
+	{{bookResults}}
+	<br>
+	<div>
+	<ul>
+      <li ng-repeat="name in names">{{name}}
+    </ul>
+	<form ng-submit="addName()">
+      <input type="text" ng-model="enteredName">
+      <input type="submit" value="add">
+    </form>
+	</div>

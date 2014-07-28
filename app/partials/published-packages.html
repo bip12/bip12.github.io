@@ -1,0 +1,26 @@
+<h4>These packages are already published and customers can view them. They are ready to be assigned to an available tour guide</h4>
+<a class="topbtn"><button class="btn btn-primary" >Assign Package to available Tour Guide</button></a>
+<br>
+<div>
+	<b>Search:</b>
+	<input ng-model="searchText">
+</div>
+<br>
+<table class="table table-striped">
+  <tr>
+    <th>Select</th>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Description</th>
+  </tr>
+  <tr ng-repeat="pkg in packages | filter:searchText" >
+		<td ng-if="pkg.status == 'published'"><input type="radio" ng-model="$parent.currentPackage" name="foo" value="{{pkg}}" id="{{pkg.id}}"></td>
+		<td ng-if="pkg.status == 'published'"><a>{{pkg.id}}</a></td>
+		<td ng-if="pkg.status == 'published'"><a>{{pkg.package_name}}</a></td>
+		<td ng-if="pkg.status == 'published'"><a>{{pkg.start_date}}</a></td>
+		<td ng-if="pkg.status == 'published'"><a>{{pkg.end_date}}</a></td>
+		<td ng-if="pkg.status == 'published'"><a>{{pkg.description}}</a></td>	  
+  </tr>
+</table>
