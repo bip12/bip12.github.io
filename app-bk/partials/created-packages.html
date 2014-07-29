@@ -1,0 +1,26 @@
+<div>
+	<h4>This is a list of packages created and ready for being reserved.</h4>
+</div>
+<br>
+<div>
+	<b>Search:</b>
+	<input ng-model="searchText">
+</div>
+<br>
+<div class="spinner" ng-show="loading"></div>
+<table class="table table-striped">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Description</th>
+  </tr>
+  <tr ng-repeat="pkg in packages | filter:searchText" >
+		<td ng-if="pkg.status == 'created'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.id}}</a></td>
+		<td ng-if="pkg.status == 'created'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.package_name}}</a></td>
+		<td ng-if="pkg.status == 'created'"><a>{{pkg.start_date}}</a></td>
+		<td ng-if="pkg.status == 'created'"><a>{{pkg.end_date}}</a></td>
+		<td ng-if="pkg.status == 'created'"><a>{{pkg.description}}</a></td>	  
+  </tr>
+</table>
