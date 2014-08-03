@@ -17,8 +17,8 @@
   </tr>
   <tr ng-repeat="pkg in packages | filter:searchText" >
 		<td ng-if="pkg.status == 'published'"><input type="radio" ng-model="$parent.currentPackage" name="foo" value="{{pkg}}" id="{{pkg.id}}"></td>
-		<td ng-if="pkg.status == 'published'"><a>{{pkg.id}}</a></td>
-		<td ng-if="pkg.status == 'published'"><a>{{pkg.package_name}}</a></td>
+		<td ng-if="pkg.status == 'published'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.id}}</a></td>
+		<td ng-if="pkg.status == 'published'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.package_name}}</a></td>
 		<td ng-if="pkg.status == 'published'"><a>{{pkg.start_date}}</a></td>
 		<td ng-if="pkg.status == 'published'"><a>{{pkg.end_date}}</a></td>
 		<td ng-if="pkg.status == 'published'"><a>{{pkg.description}}</a></td>	  

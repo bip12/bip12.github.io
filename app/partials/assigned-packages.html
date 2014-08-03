@@ -1,0 +1,23 @@
+<h4>These packages are assigned to tour guides and they have access their info on their phone:</h4>
+<br>
+<div>
+	<b>Search:</b>
+	<input ng-model="searchText">
+</div>
+<br>
+<table class="table table-striped">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Description</th>
+  </tr>
+  <tr ng-repeat="pkg in packages | filter:searchText" >
+		<td ng-if="pkg.status == 'assigned'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.id}}</a></td>
+		<td ng-if="pkg.status == 'assigned'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.package_name}}</a></td>
+		<td ng-if="pkg.status == 'assigned'"><a>{{pkg.start_date}}</a></td>
+		<td ng-if="pkg.status == 'assigned'"><a>{{pkg.end_date}}</a></td>
+		<td ng-if="pkg.status == 'assigned'"><a>{{pkg.description}}</a></td>	  
+  </tr>
+</table>

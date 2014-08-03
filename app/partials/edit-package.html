@@ -1,5 +1,9 @@
-<h4>Please fill these fields to create a new package.</h4>
-<h4>The created package will be added to your "Created Packages" list which then can be Reserved.</h4>
+<h4>Please edit these fields to update the package.</h4>
+<h4>The updated package will be added to your "Created Packages" list which then can be Reserved.</h4>
+<h4>Reserve services for the selected package here.</h4>
+<div>
+	Editing <b>{{editingPackage.package_name}}</b>
+</div>
 <div class="well tab-content">                        
 	<div class="tab-pane active" id="object-form">
         <form  class="form-horizontal"  >
@@ -24,10 +28,7 @@
 				</div>
 				<div class="control-group" >
 					<label for="endDate" class="control-label">End date:</label>
-					<div class="controls">
-						<input id='datepicker2' class="form-control" type="text" ng-model="end_date">
-					</div>
-					
+					<input id='datepicker2' class="form-control" type="text" ng-model="end_date">
 				</div>
 				<div class="form-group">
 					<label class="control-label">Package type:</label>
@@ -63,43 +64,43 @@
 					</div>
 				</div>
 				<br>
-				<h4>Which of these services are included in the package?</h4>
+				<h4>Hotel is checked by default in this prototype version.</h4>
 				<div class="borderline">
 					<div class="control-group ">
 						<label for="flight" class="control-label">Flight:</label>
 						<div class="controls">
-							<input id="flight" type="checkbox">
+							<input id="flight" type="checkbox" ng-model = "flight" ng-init="">
 						</div>
 					</div>
 					<div class="control-group ">
 						<label for="hotel" class="control-label">Hotel:</label>
 						<div class="controls">
-							<input id="hotel"  type="checkbox">
+							<input id="hotel"  type="checkbox" ng-model = "hotel" ng-init="">
 						</div>
 					</div>
 					<div class="control-group ">
 						<label for="insurance" class="control-label">Insurance:</label>
 						<div class="controls">
-							<input id="insurance" type="checkbox">
+							<input id="insurance" type="checkbox" ng-model = "insurance" ng-init="">
 						</div>
 					</div>
 					<div class="control-group ">
 						<label for="restaurant" class="control-label">Restaurant:</label>
 						<div class="controls">
-							<input id="restaurant" type="checkbox">
+							<input id="restaurant" type="checkbox" ng-model = "restaurant" ng-init="">
 						</div>
 					</div>
 					<div class="control-group ">
 						<label for="local_booking" class="control-label">Local booking:</label>
 						<div class="controls">
-							<input id="local_booking"  type="checkbox">
+							<input id="local_booking"  type="checkbox" ng-model = "local_booking" ng-init="">
 						</div>
 					</div>
 				</div>
 				<br>
 				<div class="form-actions">
-				<a href="#/created-packages"><button  ng-click="createPackage('submitResult')" class="btn btn-primary" >Create Package</button>
-				</a>
+						<button  ng-click="updatePackage('updateResult')" class="btn btn-primary" >Update Package</button>
+					
 				</div>
 				<script type="text/javascript">
 					$(document).ready(

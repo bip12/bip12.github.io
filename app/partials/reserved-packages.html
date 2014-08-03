@@ -17,8 +17,8 @@
   </tr>
   <tr ng-repeat="pkg in packages | filter:searchText" >
 		<td ng-if="pkg.status == 'reserved'"><input type="radio" ng-model="$parent.currentPackage" name="foo" value="{{pkg}}" id="{{pkg.id}}"></td>
-		<td ng-if="pkg.status == 'reserved'"><a ng-href="#/reserved-packages/{{pkg.id}}">{{pkg.id}}</a></td>
-		<td ng-if="pkg.status == 'reserved'"><a ng-href="#/reserved-packages/{{pkg.id}}">{{pkg.package_name}}</a></td>
+		<td ng-if="pkg.status == 'reserved'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.id}}</a></td>
+		<td ng-if="pkg.status == 'reserved'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.package_name}}</a></td>
 		<td ng-if="pkg.status == 'reserved'"><a>{{pkg.start_date}}</a></td>
 		<td ng-if="pkg.status == 'reserved'"><a>{{pkg.end_date}}</a></td>
 		<td ng-if="pkg.status == 'reserved'"><a>{{pkg.description}}</a></td>	  

@@ -32,9 +32,14 @@
 					<label class="control-label redz">{{singlepackage.status}}</label>
 				</div>
 				<br>
+				<div>
+					<label class="control-label">Services reserved for this package:</label>
+					<label class="control-label redz"></label>
+				</div>
+				<br>
 				<div class="form-actions">
-					<button class="btn btn-primary" title="Make a POST request on the Package List resource to create a new package">Edit Package</button>				
-				
+					<a href="#/created-packages/{{singlepackage.id}}/edit"><button class="btn btn-primary" ng-click="editPackage('editingpackage')">Edit Package</button></a>			
+				{{editingpackage}}
 					<a href="#/created-packages"><button class="btn btn-primary" ng-click="removePackage('removingpackage')">Delete Package</button></a>
 					{{removingpackage}}
 					<a ng-href="#/created-packages/{{singlepackage.id}}/reserve"><button class="btn btn-primary" >Reserve Package</button></a>
