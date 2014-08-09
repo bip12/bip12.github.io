@@ -1,0 +1,47 @@
+<h4>These packages have been reserved by you. If all the services are already added to the package you can publish them to the customers.</h4>
+<a class="topbtn"><button class="btn btn-primary" >Assign Package to available Tour Guide</button></a>
+<br>
+<div>
+	<b>Search for package name, description, dates and types:</b>
+	<input ng-model="searchText">
+</div>
+<br>
+
+<div>
+<ul class="thumbnails" style="list-style-type:none">
+  <li class="span3" ng-repeat="pkg in packages | filter:searchText" style="display:inline">
+	<div class="thumbnail" ng-if="pkg.status == 'reserved'">
+	   <span>{{pkg.package_type}}</span>
+		  <div class="caption">
+		  <a ng-href="#/created-packages/{{pkg.id}}"><img  alt="300x200" style="width: 240px; height: 180px;" src={{pkg.image_url}}></a>
+		  <br>
+		  <input type="radio" ng-model="$parent.currentPackage" name="foo" value="{{pkg}}" id="{{pkg.id}}">	
+			<h3><a ng-href="#/created-packages/{{pkg.id}}"><b>{{pkg.package_name}}</b></a></h3>
+			<br>
+			<p><b>Start Date:</b>{{pkg.start_date}}</p>
+			<p><b>End Date:</b>{{pkg.end_date}}</p>
+			<p>{{pkg.description}}</p>
+		  </div>                  
+	</div>
+  </li>
+</ul>
+</div>
+<!--
+<table class="table table-striped">
+  <tr>
+	<th>Select</th>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Description</th>
+  </tr>
+  <tr ng-repeat="pkg in packages | filter:searchText" >
+		<td ng-if="pkg.status == 'reserved'"><input type="radio" ng-model="$parent.currentPackage" name="foo" value="{{pkg}}" id="{{pkg.id}}"></td>
+		<td ng-if="pkg.status == 'reserved'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.id}}</a></td>
+		<td ng-if="pkg.status == 'reserved'"><a ng-href="#/created-packages/{{pkg.id}}">{{pkg.package_name}}</a></td>
+		<td ng-if="pkg.status == 'reserved'"><a>{{pkg.start_date}}</a></td>
+		<td ng-if="pkg.status == 'reserved'"><a>{{pkg.end_date}}</a></td>
+		<td ng-if="pkg.status == 'reserved'"><a>{{pkg.description}}</a></td>	  
+  </tr>
+</table>-->

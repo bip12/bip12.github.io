@@ -1,0 +1,122 @@
+<h4>Please edit these fields to update the package.</h4>
+<h4>The updated package will be added to your "Created Packages" list which then can be Reserved.</h4>
+<h4>Reserve services for the selected package here.</h4>
+<div>
+	Editing <b>{{editingPackage.package_name}}</b>
+</div>
+<div class="well tab-content">                        
+	<div class="tab-pane active" id="object-form">
+        <form  class="form-horizontal"  >
+			<fieldset>
+				<div class="control-group" >
+					<label for="package_name" class="control-label">Package name:</label>
+					<div class="controls">
+						<input id="package_name" class="form-control" ng-model="package_name" type="text">
+					</div>
+					
+				</div>
+				<div class="control-group">
+					<label for="description" class="control-label">Description:</label>
+					<div class="controls">
+						<input id="description" class="form-control"  type="text" ng-model="description">
+					</div>
+				</div>
+				<div class="control-group" >
+					<label for="startDate" class="control-label">Start date:</label>
+					<input id='datepicker1' class="form-control"  type="text" ng-model="start_date">
+					
+				</div>
+				<div class="control-group" >
+					<label for="endDate" class="control-label">End date:</label>
+					<input id='datepicker2' class="form-control" type="text" ng-model="end_date">
+				</div>
+				<div class="form-group">
+					<label class="control-label">Package type:</label>
+					<div class="radio">
+						<label>
+							<input type="radio" value="Vacation" ng-model="package_type" class="nfi">Vacation
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" value="Honeymoon" ng-model="package_type" class="nfi">Honeymoon
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio"  value="Educational" ng-model="package_type" class="nfi">Educational
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio"  value="Adventure" ng-model="package_type" class="nfi">Adventure
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" value="Family" ng-model="package_type" class="nfi">Family
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio"  value="Pilgrimage" ng-model="package_type" class="nfi">Pilgrimage
+						</label>
+					</div>
+				</div>
+				<br>
+				<h4>Hotel is checked by default in this prototype version.</h4>
+				<div class="borderline">
+					<div class="control-group ">
+						<label for="flight" class="control-label">Flight:</label>
+						<div class="controls">
+							<input id="flight" type="checkbox" ng-model = "flight" ng-init="">
+						</div>
+					</div>
+					<div class="control-group ">
+						<label for="hotel" class="control-label">Hotel:</label>
+						<div class="controls">
+							<input id="hotel"  type="checkbox" ng-model = "hotel" ng-init="">
+						</div>
+					</div>
+					<div class="control-group ">
+						<label for="insurance" class="control-label">Insurance:</label>
+						<div class="controls">
+							<input id="insurance" type="checkbox" ng-model = "insurance" ng-init="">
+						</div>
+					</div>
+					<div class="control-group ">
+						<label for="restaurant" class="control-label">Restaurant:</label>
+						<div class="controls">
+							<input id="restaurant" type="checkbox" ng-model = "restaurant" ng-init="">
+						</div>
+					</div>
+					<div class="control-group ">
+						<label for="local_booking" class="control-label">Local booking:</label>
+						<div class="controls">
+							<input id="local_booking"  type="checkbox" ng-model = "local_booking" ng-init="">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-actions">
+						<button  ng-click="updatePackage('updateResult')" class="btn btn-primary" >Update Package</button>
+					
+				</div>
+				<script type="text/javascript">
+					$(document).ready(
+						function () {
+							$( "#datepicker1" ).datepicker({
+								changeMonth: true,//this option for allowing user to select month
+								changeYear: true //this option for allowing user to select from year range
+							});
+							$( "#datepicker2" ).datepicker({
+								  changeMonth: true,//this option for allowing user to select month
+								  changeYear: true //this option for allowing user to select from year range
+							});
+						}
+					);
+				</script>
+			</fieldset>
+		</form>
+	</div>              
+</div>

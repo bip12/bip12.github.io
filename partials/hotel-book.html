@@ -1,0 +1,32 @@
+
+<br>
+<div>	<p><h4>Package: {{singlepackage.package_name}}, {{singlepackage.description}}</h4></p></div>
+<br>
+<div>
+<div>
+<h4 style="float: left;">Your total amount is: ${{checkout}}</h4>
+<img src="img/paypal.gif" width="200" height="100"></div>
+<br>
+<br>
+	<form action="/agentapp/hotel-reservation/" method="POST" enctype="multipart/form-data" class="form-horizontal">
+		<fieldset>
+		 
+		<div class="control-group ">
+			<label for="email" class="control-label">Send booking confirmation to this email:</label>
+			<br>
+			<br>
+			<div class="controls">
+				<input style="width:50%;" id="email" name="email" type="text" ng-model="bookemail">			
+			</div>
+		</div> 
+
+		<br>
+			<br><div class="form-actions">
+					<a ng-href="#/created-packages/reserve/hotelSearch/booked">
+						<button class="btn btn-primary" ng-click="saveEmail()">Book Hotel</button>
+					</a>
+			</div>
+		</fieldset>
+	</form>
+</div>
+{{booking}}

@@ -1,0 +1,329 @@
+<div>
+	<br>
+	<p>
+	<h4><b>Results for package: <u>{{singlepackage.package_name}}</u></b></h4>
+	</p>
+</div>
+<div id="SResults" style="margin: 20px;">
+<ul class="media-list">
+<li >
+	<!--===================================================result 1==================================================-->
+		
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].tripAdvisorRatingUrl}}">
+		<br>
+		<br>
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[0].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[0].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[0].longitude}}</h4></p>
+		</div>
+</li>
+<br>
+<br>
+	<!--===========================================================================================================
+	===========================================================result 2================================================= -->
+<li>
+	
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[1].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[1].tripAdvisorRatingUrl}}">
+<br>
+<br>
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[1].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[1].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[1].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[1].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+<br>
+<br>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[1].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[1].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[1].longitude}}</h4></p>
+		</div>
+</li>
+<br>
+<br>
+	<!-- ============================================================================================================= 
+	==============================================result 3============================================================= -->
+<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[2].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[2].tripAdvisorRatingUrl}}">
+<br>
+<br>
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[2].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[2].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[2].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[2].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[2].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[2].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[2].longitude}}</h4></p>
+		</div>
+</li>
+<br>
+<br>
+	<!-- =====================================================================================================
+	========================================================result 4==========================================-->
+<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].tripAdvisorRatingUrl}}">
+<br>
+<br>		
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[3].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[3].longitude}}</h4></p>
+		</div>
+	</li>
+<br>
+<br>
+	<!-- ======================================================================================================
+	==========================================================result 5===========================================-->
+	<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[4].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[4].tripAdvisorRatingUrl}}">
+<br>
+<br>		
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[4].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[4].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[4].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[4].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[4].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[4].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[4].longitude}}</h4></p>
+		</div>
+	</li>
+<br>
+<br>
+<!--====================================================================================================
+==========================================================result 6==========================================-->
+<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[5].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[5].tripAdvisorRatingUrl}}">
+<br>
+<br>		
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[5].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[5].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[5].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[5].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[5].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[5].longitude}}</h4></p>
+		</div>
+	</li>
+<br>
+<br>
+<!--==============================================================================================================
+=======================================================================result 9=============================================-->
+<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[8].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[8].tripAdvisorRatingUrl}}">
+<br>
+<br>		
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[8].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[8].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[8].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[8].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[8].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[8].longitude}}</h4></p>
+		</div>
+	</li>
+<br>
+<br>
+<!--========================================================result 7============================================================-->
+<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[6].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[6].tripAdvisorRatingUrl}}">
+<br>
+<br>		
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[6].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[6].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[6].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[6].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[6].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[6].longitude}}</h4></p>
+		</div>
+	</li>
+<br>
+<br>
+<!--=============================================================================================================
+===================================================================result 8===========================================-->
+<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[7].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[7].tripAdvisorRatingUrl}}">
+<br>
+<br>		
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[7].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[7].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[7].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[7].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[7].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[7].longitude}}</h4></p>
+		</div>
+	</li>
+<br>
+<br>
+<!--=====================================================================================================
+===================================================================result 10===========================================-->
+<li>
+
+		<div class="col-lg-3 col-lg-2 sidebar">
+		<br>
+		<img  src="http://media.expedia.com{{hotelResults.HotelListResponse.HotelList.HotelSummary[9].thumbNailUrl}}" width="130" height="130">
+		
+		<img  src="{{hotelResults.HotelListResponse.HotelList.HotelSummary[9].tripAdvisorRatingUrl}}">
+<br>
+<br>		
+		<a  ng-href="#/created-packages/{{singlepackage.id}}/reserve/hotelSearch/booking/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[9].hotelId}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[9].RoomRateDetailsList.RoomRateDetails.roomTypeCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[9].RoomRateDetailsList.RoomRateDetails.rateCode}}/
+		{{hotelResults.HotelListResponse.HotelList.HotelSummary[9].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}">
+			<button class="btn btn-primary" >Selecct this Hotel</button> 
+		</a>
+		</div>
+		<div class="media-body">
+			<p><h4 class="media-heading" style="font: bold 20px/1.5 Helvetica, Verdana, sans-serif;">Hotel Name: {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].name}}</h4></p>		
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Rate: ${{hotelResults.HotelListResponse.HotelList.HotelSummary[9].RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo['@total']}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel ID: {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].hotelId}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel Address: {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].address1}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].city}}, {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].stateProvinceCode}} {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].postalCode}}</h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>Hotel TripAdvisor link: 
+			<a href= "{{hotelResults.HotelListResponse.HotelList.HotelSummary[3].deepLink}}">TravelNow</a></h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>lat: {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].latitude}} </h4></p>
+			<p style="font: 200 12px/1.5 Georgia, Times New Roman, serif;"><h4>long: {{hotelResults.HotelListResponse.HotelList.HotelSummary[9].longitude}}</h4></p>
+		</div>
+	</li>
+<br>
+</ul>
+</div>
